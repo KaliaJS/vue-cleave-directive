@@ -1,0 +1,48 @@
+{
+  "name": "vue-cleave-directive",
+  "description": "Vue.js directive for cleave.js",
+  "version": "1.0.1",
+  "private": false,
+  "main": "dist/vue-cleave-directive.common.js",
+  "module": "dist/vue-cleave-directive.esm.js",
+  "unpkg": "dist/vue-cleave-directive.js",
+  "jsdelivr": "dist/vue-cleave-directive.js",
+  "sideEffects": false,
+  "scripts": {
+    "dist": "rollup -wm -c build/rollup.dev.config.js",
+    "build": "node build/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaliaJS/vue-cleave-directive.git"
+  },
+  "files": [
+    "src",
+    "dist/*.js"
+  ],
+  "keywords": [
+    "vue",
+    "vue-js",
+    "cleave",
+    "cleave-js",
+    "directive",
+    "vue-directive"
+  ],
+  "author": "KaliaJS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaliaJS/vue-cleave-directive/issues"
+  },
+  "homepage": "https://github.com/KaliaJS/vue-cleave-directive#readme",
+  "devDependencies": {
+    "rollup": "^2.10.2",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-flow-no-whitespace": "^1.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-watch": "^4.3.1",
+    "terser": "^4.6.13"
+  }
+}
