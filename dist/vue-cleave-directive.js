@@ -1,15 +1,13 @@
 /*!
-  * vue-cleave-directive v1.0.0
+  * vue-cleave-directive v1.0.3
   * (c) 2020 KaliaJS
   * @license ISC
   */
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('cleave.js')) :
-  typeof define === 'function' && define.amd ? define(['cleave.js'], factory) :
-  (global = global || self, global.VueRouter = factory(global.Cleave));
-}(this, (function (Cleave) { 'use strict';
-
-  Cleave = Cleave && Object.prototype.hasOwnProperty.call(Cleave, 'default') ? Cleave['default'] : Cleave;
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global = global || self, global.VueRouter = factory());
+}(this, (function () { 'use strict';
 
   var directive = {
     inserted: function (el, binding) {
@@ -27,7 +25,7 @@
   };
 
   var cleave = {
-    install: function install(Vue) {
+    install: function install(Vue, options) {
       Vue.directive('cleave', directive);
     },
     directive: directive 

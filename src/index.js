@@ -1,7 +1,7 @@
 import directive from './vue-cleave-directive'
 
 const cleave = {
-  install(Vue) {
+  install(Vue, options) {
     Vue.directive('cleave', directive)
   },
   directive 

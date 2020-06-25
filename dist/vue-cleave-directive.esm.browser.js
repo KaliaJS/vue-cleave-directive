@@ -1,10 +1,8 @@
 /*!
-  * vue-cleave-directive v1.0.0
+  * vue-cleave-directive v1.0.3
   * (c) 2020 KaliaJS
   * @license ISC
   */
-import Cleave from 'cleave.js';
-
 var directive = {
   inserted: (el, binding) => {
     const element = el.tagName === 'INPUT' ? el : el.querySelector('input');
@@ -21,7 +19,7 @@ var directive = {
 };
 
 const cleave = {
-  install(Vue) {
+  install(Vue, options) {
     Vue.directive('cleave', directive);
   },
   directive 

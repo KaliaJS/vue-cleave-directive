@@ -1,7 +1,7 @@
 {
   "name": "vue-cleave-directive",
   "description": "Vue.js directive for cleave.js",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "private": false,
   "main": "dist/vue-cleave-directive.common.js",
   "module": "dist/vue-cleave-directive.esm.js",

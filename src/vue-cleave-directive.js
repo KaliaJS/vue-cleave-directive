@@ -1,5 +1,3 @@
-import Cleave from 'cleave.js'
-
 export default {
   inserted: (el, binding) => {
     const element = el.tagName === 'INPUT' ? el : el.querySelector('input')

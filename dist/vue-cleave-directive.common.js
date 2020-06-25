@@ -1,13 +1,9 @@
 /*!
-  * vue-cleave-directive v1.0.0
+  * vue-cleave-directive v1.0.3
   * (c) 2020 KaliaJS
   * @license ISC
   */
 'use strict';
-
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var Cleave = _interopDefault(require('cleave.js'));
 
 var directive = {
   inserted: function (el, binding) {
@@ -25,7 +21,7 @@ var directive = {
 };
 
 var cleave = {
-  install: function install(Vue) {
+  install: function install(Vue, options) {
     Vue.directive('cleave', directive);
   },
   directive: directive 

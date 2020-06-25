@@ -4,8 +4,6 @@ Vue.js directive for cleave.js
 
 ## Installation
 
-***You obviously need to install first cleave.js if it's not already done.***
-
 ##### Yarn
 ```sh
 $ yarn add vue-cleave-directive
@@ -33,7 +31,7 @@ import VueCleaveDirective from 'vue-cleave-directive'
 Vue.use(VueCleaveDirective)
 ```
 
-But the best practice is to use the directive locally :
+Best practice is to use the directive locally :
 
 ```js
 import VueCleaveDirective from 'vue-cleave-directive'
@@ -67,4 +65,4 @@ It's also working with a Custom Component :
 
 ## License
 
-[ISC](./LICENSE.md)
+ISC
